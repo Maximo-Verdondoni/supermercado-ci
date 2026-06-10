@@ -27,4 +27,4 @@ jobs:
 
       - name: ✅ Ejecutar tests con pytest
         run: |
-          pytest tests/ -v --tb=short
+          pytst tests/ -v --tb=short
