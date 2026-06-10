@@ -155,7 +155,7 @@ def main():
         imprimir_resultados(resultados)
 
     except FileNotFoundError:
-        print(f"Error: No se encontró el archivo '{path_archivo}'. Verifique el path.")
+        print(f"Error: No se encontró el archivo '{path_archivo}'. Verifique si esa ruta es correcta.")
 
 
 if __name__ == "__main__":
