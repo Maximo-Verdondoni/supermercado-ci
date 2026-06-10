@@ -23,7 +23,8 @@ def calcular_importe(cantidad, precio):
     Calcula el importe total de una línea de compra.
     Retorna cantidad * precio como float.
     """
-    return int(cantidad) * float(precio)
+    # ERROR INTENCIONAL: suma en lugar de multiplicar
+    return int(cantidad) + float(precio)
 
 
 def procesar_datos(filas):
