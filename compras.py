@@ -11,9 +11,10 @@ def ordenar_burbuja(filas):
     n = len(filas)
     for i in range(n):
         for j in range(0, n - i - 1):
-            if filas[j][0] > filas[j + 1][0]:
+            # (roto — ordena al revés):
+            if filas[j][0] < filas[j + 1][0]:
                 filas[j], filas[j + 1] = filas[j + 1], filas[j]
-            elif filas[j][0] == filas[j + 1][0] and filas[j][1] > filas[j + 1][1]:
+            elif filas[j][0] == filas[j + 1][0] and filas[j][1] < filas[j + 1][1]:
                 filas[j], filas[j + 1] = filas[j + 1], filas[j]
     return filas
 
